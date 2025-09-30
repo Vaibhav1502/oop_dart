@@ -1,14 +1,23 @@
 void main() {
 
-  Student student = Student();
+  Student student1 = Student();
+  Student student2 = Student();
 
-  student.name = "Vaibhav";
-  student.age = 30;
-  student.grade = 'A';
-  student.studentid = 001;
+  student1.name = "Vaibhav";
+  student1.age = 30;
+  student1.grade = 'A';
+  student1.studentid = 001;
 
-  student.displayInfo();
-  student.updategrade("A++");
+  student2.name = "John";
+  student2.age = 20;
+  student2.grade = 'B';
+  student2.studentid = 002;
+
+  student1.displayInfo();
+  student1.updategrade("A++");
+
+  student2.displayInfo();
+  student2.updategrade("B++");
 
 }
 
@@ -24,6 +33,7 @@ class Student {
       print("Age:${age}");
       print("Grade:${grade}");
       print("Studentid:${studentid}");
+      print("----------------------------");
     }
 
     void updategrade(String newGrade){
